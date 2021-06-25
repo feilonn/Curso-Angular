@@ -49,5 +49,32 @@
             Texto só aparece em caso de erro!
         </div>
 
+        <button [disabled]="desativado">Disabled</button>
+
+    </article>
+
+    <article>
+        
+        <h3>Event Binding</h3>        
+        <button (click)="buttonClick()" class="btn btn-primary">Test Button</button>
+
+        <input type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="saveValue(campoInput.value)"
+        (blur)="saveValue(campoInput.value)"
+        #campoInput
+        />
+
+        <p>Output: {{valorAtual}} </p>
+        <p>Output: {{valorSalvo}} </p>
+
+        <br>
+        
+        <span 
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.highlight]="isMouseOver">
+        Over-Out Mouse
+        </span>
     </article>
 </section>
