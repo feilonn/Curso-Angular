@@ -30,6 +30,11 @@ export class DataBindingComponent implements OnInit {
     this.isMouseOver = !this.isMouseOver;
   }
 
+  pessoa: any = {
+    nome : 'Raul',
+    idade : 23
+  };
+
   constructor() { }
 
   ngOnInit(): void {
