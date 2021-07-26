@@ -1,12 +1,12 @@
-<section>
-    <!--<article>
+<!-- <section>
+    <article>
         <h3>Interpolation</h3>
         <p>String renderizada com iterpolação:{{ url }}</p>
         <p>5*4 = {{ 5 * 4 }}</p>
     </article>
         <h3>Property Binding</h3>
         <img src = "{{ urlImagem }}" >
-        <img [src] = "urlImagem" > -->
+        <img [src] = "urlImagem" >
     <article>
         <h3>Class & Style Binding</h3>
         <div>
@@ -84,5 +84,13 @@
 
         <input type="text" [(ngModel)]="pessoa.nome">
         <input type="text" [(ngModel)]="pessoa.idade">
+    </article>
+    
+</section> -->
+
+<section class="input-output-properties">
+    <article>
+        <h3>Input/Output Properties</h3>
+        <app-curso [nomeCurso]="nomeDoCurso"></app-curso>
     </article>
 </section>
