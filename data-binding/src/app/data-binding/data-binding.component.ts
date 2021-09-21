@@ -16,6 +16,8 @@ export class DataBindingComponent implements OnInit {
 
   nomeDoCurso: string = "Angular";
 
+  valorInicial: number = 0;
+
   buttonClick(){
     alert("Works!");
   }

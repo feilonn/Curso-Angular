@@ -54,8 +54,8 @@
     </article>
 
     <article>
-        
-        <h3>Event Binding</h3>        
+
+        <h3>Event Binding</h3>
         <button (click)="buttonClick()" class="btn btn-primary">Test Button</button>
 
         <input type="text"
@@ -69,8 +69,8 @@
         <p>Output: {{valorSalvo}} </p>
 
         <br>
-        
-        <span 
+
+        <span
         (mouseover)="onMouseOverOut()"
         (mouseout)="onMouseOverOut()"
         [class.highlight]="isMouseOver">
@@ -85,7 +85,7 @@
         <input type="text" [(ngModel)]="pessoa.nome">
         <input type="text" [(ngModel)]="pessoa.idade">
     </article>
-    
+
 </section> -->
 
 <section class="input-output-properties">
@@ -93,6 +93,6 @@
         <h3>Input/Output Properties</h3>
         <app-curso [nomeCurso]="nomeDoCurso"></app-curso>
 
-        <contador [valor]="10" (mudouValor)="onMudouValor($event)"></contador>
+        <contador [valor]="valorInicial" (mudouValor)="onMudouValor($event)"></contador>
     </article>
 </section>
