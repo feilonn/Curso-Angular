@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DiretivaNgforComponent implements OnInit {
 
   cursos: string[] = ["Angular", "Java", "Phonegap"];
+  //numeros: number[] = [1, 2, 3];
 
   constructor() { }
 
